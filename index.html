@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <div id="heading">
+<h1>Tic Tac Toe</h1>
+</div>
+<hr>
+<form class="hidden">
+    <fieldset id="mode">
+        <input type="radio" value="manual" id="manual">
+        <label for="manual">Multiplayer</label>
+        <input type="radio" value="random" id="random">
+        <label for="random">With Computer</label>
+        <input type="radio" value="unbeatable" id="unbeatable">
+        <label for="unbeatable">UWith nbeatable AI</label>
+    </fieldset>
+</form>
+<div id="message">Click on the board to start.</div>
+<div id="board">
+    <div id="1" class="field"></div>
+    <div id="2" class="field"></div>
+    <div id="3" class="field"></div>
+    <div id="4" class="field"></div>
+    <div id="5" class="field"></div>
+    <div id="6" class="field"></div>
+    <div id="7" class="field"></div>
+    <div id="8" class="field"></div>
+    <div id="9" class="field"></div>
+</div>
+<button id="restart">Restart</button>
+  <script src="main.js">
+  </script>
+</body>
+</html>

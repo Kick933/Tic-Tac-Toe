@@ -1,5 +1,18 @@
-// IIFE to add eventlistener to the board.
+// IIFE to keep everything private
 (function (){
+    // Add Event listener to restart button.
+    document.getElementById("restart").addEventListener('click',restart);
+    function restart(){
+        userTurn = 1;
+        clickO = 0;
+        clickX = 0;
+        for(let i = 1; i<=9; i++){
+            let id=i;
+            document.getElementById(id).classList.remove("disabled");
+            document.getElementById(id).innerText = "";
+        }
+        document.getElementById(message).innerText = "Click on the board to start.";
+    }
     // to reference user turn
     let userTurn = 1;
     let clickX = 0;// Number of inputs by player X
